@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餐點訂購系統</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- 導航欄 -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">餐點訂購系統</h1>
+            <div>
+                <button onclick="showMenu()" class="px-4 py-2 bg-blue-500 rounded">菜單</button>
+                <button onclick="showCart()" class="px-4 py-2 bg-blue-500 rounded">
+                    購物車 (<span id="cartCount">0</span>)
+                </button>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- 菜單區域 -->
+    <div id="menuSection" class="container mx-auto p-4">
+        <h2 class="text-2xl font-bold mb-4">菜單</h2>
+        <div id="menuItems" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- 菜單項目將由 JavaScript 動態添加 -->
+        </div>
+    </div>
+
+    <!-- 購物車區域 -->
+    <div id="cartSection" class="container mx-auto p-4 hidden">
+        <h2 class="text-2xl font-bold mb-4">購物車</h2>
+        <div id="cartItems" class="mb-4">
+            <!-- 購物車項目將由 JavaScript 動態添加 -->
+        </div>
+        <div class="bg-white p-4 rounded shadow">
+            <h3 class="text-xl font-bold mb-2">顧客資料</h3>
+            <input type="text" id="customerName" placeholder="姓名" class="w-full p-2 mb-2 border rounded">
+            <input type="text" id="customerContact" placeholder="聯絡方式" class="w-full p-2 mb-2 border rounded">
+            <div class="text-right">
+                <p class="text-xl mb-2">總計: $<span id="totalAmount">0</span></p>
+                <button onclick="submitOrder()" class="px-4 py-2 bg-green-500 text-white rounded">送出訂單</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="reviewSection" class="container mx-auto p-4 hidden">
+        <div id="reviewItems" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        </div>
+    </div>
+
+    <script>
+        // 全局變數
+        let menuItems = [];
+        let cartItems = [];
+        let currentCustomer = null;
+        const API_BASE_URL = 'https://localhost:7239/api'; // 請替換成實際的 API URL
+
+        // 初始化
+        async function initialize() {
+            await loadMenuItems();
+            showMenu();
+        }
+
+        // 顯示區域控制
+        function showMenu() {
+            document.getElementById('menuSection').classList.remove('hidden');
+            document.getElementById('cartSection').classList.add('hidden');
+            document.getElementById('reviewSection').classList.add('hidden');
+        }
+
+        function showCart() {
+            document.getElementById('menuSection').classList.add('hidden');
+            document.getElementById('cartSection').classList.remove('hidden');
+            document.getElementById('reviewSection').classList.add('hidden');
+            updateCartDisplay();
+        }
+
+        function showReviews() {
+            document.getElementById('menuSection').classList.add('hidden');
+            document.getElementById('cartSection').classList.add('hidden');
+            document.getElementById('reviewSection').classList.remove('hidden');
+            loadReviews();
+        }
+
+        // API 操作
+        async function loadMenuItems() {
+            try {
+                const response = await fetch(`${API_BASE_URL}/MenuItem`);
+                menuItems = await response.json();
+                displayMenuItems();
+            } catch (error) {
+                console.error('載入菜單失敗:', error);
+                alert('載入菜單失敗');
+            }
+        }
+
+        // 顯示菜單項目
+        function displayMenuItems() {
+            const menuContainer = document.getElementById('menuItems');
+            menuContainer.innerHTML = menuItems.map(item => `
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="text-xl font-bold">${item.name}</h3>
+                    <p class="text-gray-600">${item.description}</p>
+                    <p class="text-lg font-bold mt-2">$${item.price}</p>
+                    <button onclick="addToCart(${item.itemID})" 
+                            class="mt-2 px-4 py-2 bg-blue-500 text-white rounded">
+                        加入購物車
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        // 購物車操作
+        function addToCart(itemId) {
+    const item = menuItems.find(i => i.itemID === itemId);
+    const cartItem = cartItems.find(i => i.menuItemID === itemId);
+
+    if (cartItem) {
+        cartItem.quantity += 1;
+        cartItem.subTotal = cartItem.quantity * item.price;
+    } else {
+        cartItems.push({
+            menuItemID: itemId,
+            quantity: 1,
+            subTotal: item.price,
+            name: item.name,
+            price: item.price,
+            description: item.description || '',
+            menuItem: {  // 儲存完整的 MenuItem 物件
+                itemID: item.itemID,
+                name: item.name,
+                price: item.price,
+                description: item.description || ''
+            }
+        });
+    }
+
+    updateCartCount();
+}
+
+
+        function updateCartCount() {
+            const count = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+            document.getElementById('cartCount').textContent = count;
+        }
+
+        function updateCartDisplay() {
+            const cartContainer = document.getElementById('cartItems');
+            const totalAmount = cartItems.reduce((sum, item) => sum + item.subTotal, 0);
+
+            cartContainer.innerHTML = cartItems.map(item => `
+                <div class="bg-white p-4 rounded shadow mb-2 flex justify-between items-center">
+                    <div>
+                        <h3 class="text-xl">${item.menuItem.name}</h3>
+                        <p>數量: ${item.quantity} x $${item.menuItem.price}</p>
+                    </div>
+                    <div>
+                        <p class="font-bold">$${item.subTotal}</p>
+                        <button onclick="removeFromCart(${item.menuItemID})" 
+                                class="px-2 py-1 bg-red-500 text-white rounded">
+                            移除
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+
+            document.getElementById('totalAmount').textContent = totalAmount;
+        }
+
+        function removeFromCart(itemId) {
+            cartItems = cartItems.filter(item => item.menuItemID !== itemId);
+            updateCartCount();
+            updateCartDisplay();
+        }
+
+        // 提交訂單
+        async function submitOrder() {
+    const customerName = document.getElementById('customerName').value;
+    const customerContact = document.getElementById('customerContact').value;
+
+    if (!customerName || !customerContact) {
+        alert('請填寫完整的顧客資料');
+        return;
+    }
+
+    if (cartItems.length === 0) {
+        alert('購物車是空的，請先選擇餐點');
+        return;
+    }
+
+    try {
+        // 1. 先建立顧客資料
+        const customerResponse = await fetch(`${API_BASE_URL}/Customer`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                name: customerName,
+                contactInfo: customerContact
+            })
+        });
+
+        if (!customerResponse.ok) {
+            throw new Error('建立顧客資料失敗');
+        }
+
+        const customer = await customerResponse.json();
+        console.log('建立的顧客資料:', customer);
+
+        if (!customer || !customer.customerID) {
+            throw new Error('無法獲取有效的顧客ID');
+        }
+
+        // 2. 計算總金額
+        const totalAmount = cartItems.reduce((sum, item) => 
+            sum + parseFloat(item.subTotal), 0
+        );
+
+        // 3. 準備訂單資料 - 包含完整的 Customer 和 MenuItem 物件
+        const orderData = {
+            customerID: customer.customerID,
+            orderDate: new Date().toISOString(),
+            totalAmount: totalAmount,
+            status: "Pending",
+            customer: {  // 添加完整的 Customer 物件
+                customerID: customer.customerID,
+                name: customerName,
+                contactInfo: customerContact
+            },
+            orderItems: cartItems.map(item => ({
+                menuItemID: item.menuItemID,
+                quantity: item.quantity,
+                subTotal: parseFloat(item.subTotal),
+                menuItem: {  // 添加完整的 MenuItem 物件
+                    itemID: item.menuItemID,
+                    name: item.name,
+                    price: item.price,
+                    description: item.description || ''
+                }
+            }))
+        };
+
+        console.log('準備送出的訂單資料:', JSON.stringify(orderData, null, 2));
+
+        // 4. 送出訂單
+        const orderResponse = await fetch(`${API_BASE_URL}/Order`, {
+            method: 'POST',
+            headers: { 
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(orderData)
+        });
+
+        if (!orderResponse.ok) {
+            const errorText = await orderResponse.text();
+            throw new Error(`建立訂單失敗: ${errorText}`);
+        }
+
+        const order = await orderResponse.json();
+        console.log('訂單建立成功:', order);
+
+        // 5. 清空購物車並顯示成功訊息
+        alert('訂單已成功送出！');
+        cartItems = [];
+        updateCartCount();
+        updateCartDisplay();
+        showMenu();
+
+        // 6. 保存當前顧客資料以供後續使用
+        currentCustomer = customer;
+
+    } catch (error) {
+        console.error('送出訂單時發生錯誤:', error);
+        alert(`送出訂單失敗: ${error.message}`);
+    }
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+        // 初始化應用
+        initialize();
+    </script>
+</body>
+</html>
+
+
