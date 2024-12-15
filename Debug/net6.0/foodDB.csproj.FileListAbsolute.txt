@@ -1,0 +1,135 @@
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\foodDB.exe
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\foodDB.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\appsettings.json
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\foodDB.csproj.AssemblyReference.cache
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\foodDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\foodDB.AssemblyInfoInputs.cache
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\foodDB.AssemblyInfo.cs
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\foodDB.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\foodDB.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\foodDB.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\staticwebassets\msbuild.foodDB.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\staticwebassets\msbuild.build.foodDB.props
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.foodDB.props
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.foodDB.props
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\scopedcss\bundle\foodDB.styles.css
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\foodDB.csproj.CopyComplete
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\foodDB.dll
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\refint\foodDB.dll
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\foodDB.pdb
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\foodDB.deps.json
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\foodDB.runtimeconfig.json
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\foodDB.pdb
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\foodDB.genruntimeconfig.cache
+C:\Users\kevin\Desktop\DB web\foodDB\obj\Debug\net6.0\ref\foodDB.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Humanizer.dll
+C:\Users\kevin\Desktop\DB web\foodDB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\appsettings.json
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\foodDB.exe
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\foodDB.deps.json
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\foodDB.runtimeconfig.json
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\foodDB.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\foodDB.pdb
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Humanizer.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\TY\Desktop\foodDB\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\foodDB.csproj.AssemblyReference.cache
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\foodDB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\foodDB.AssemblyInfoInputs.cache
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\foodDB.AssemblyInfo.cs
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\foodDB.csproj.CoreCompileInputs.cache
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\foodDB.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\foodDB.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\staticwebassets\msbuild.foodDB.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\staticwebassets\msbuild.build.foodDB.props
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.foodDB.props
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.foodDB.props
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\scopedcss\bundle\foodDB.styles.css
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\foodDB.csproj.CopyComplete
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\foodDB.dll
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\refint\foodDB.dll
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\foodDB.pdb
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\foodDB.genruntimeconfig.cache
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\ref\foodDB.dll
+C:\Users\TY\Desktop\foodDB\obj\Debug\net6.0\foodDB.sourcelink.json
